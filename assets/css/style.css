@@ -114,15 +114,29 @@ h2, h4, h3, h1, h5, h6 {
     width: 700px;
     position: absolute;
     border-radius: 5px;
+    overflow: hidden;
 }
 
-.doctor {
+.doctor, .users, .confirm {
     width: 100%;
     padding: 20px;
     margin: 0 auto;
+    transition: all .4s linear;
+}
+
+.hide-section {
+    transform: translateX(-1000px);
+}
+
+.show-section {
+    transform: translateX(0px)
 }
 
 .users, .confirm {
+    transform: translateX(1000px);
+}
+
+.confirm {
     display: none;
 }
 
@@ -201,3 +215,5 @@ button.next{
     position: relative;
     padding: 40px 0;
 }
+
+/* user section */

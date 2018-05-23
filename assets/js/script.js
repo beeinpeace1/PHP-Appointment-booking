@@ -24,3 +24,11 @@ $('.times').click(function(e){
     document.querySelector('.time').classList.remove('display-time');
     func(e);
 })
+
+$('.next-button.doctor').click(()=>{
+    document.querySelector('.doctor').classList.add('hide-section');
+    setTimeout(()=>{
+        document.querySelector('.doctor').style.display = 'none';
+        document.querySelector('.users').style.display = 'block';
+    }, 450);
+})
