@@ -13,6 +13,7 @@
     grid-template-rows: repeat(3, 1fr);
     align-items: center;
     text-shadow: 1px 1px 1px #0008;
+    margin-top: 30px;
 }
 
 body {
@@ -106,12 +107,12 @@ h2, h4, h3, h1, h5, h6 {
 }
 
 .booking-form {
-    top: 70%;
+    top: 80%;
     left: 50%;
     background: #fffe;
     transform: translate(-50%, -50%);
     margin-top: 10px;
-    width: 700px;
+    width: 800px;
     position: absolute;
     border-radius: 5px;
     overflow: hidden;
@@ -121,32 +122,15 @@ h2, h4, h3, h1, h5, h6 {
     width: 100%;
     padding: 20px;
     margin: 0 auto;
-    transition: all .4s linear;
-}
-
-.hide-section {
-    transform: translateX(-1000px);
-}
-
-.show-section {
-    transform: translateX(0px)
 }
 
 .users, .confirm {
-    transform: translateX(1000px);
-}
-
-.confirm {
     display: none;
 }
 
 #calendar {
     width: 80%;
     margin: 15px auto;
-}
-
-.fc-day:not(.fc-other-month) {
-    cursor: pointer;
 }
 
 .time {
@@ -161,8 +145,25 @@ h2, h4, h3, h1, h5, h6 {
     border-radius: 8px;
 }
 
+#time-date-holder {
+    padding: 5px;
+}
+
 .display-time {
     display: block;
+}
+
+.time-holder {
+    position: relative;
+}
+
+#close-time {
+    color: white;
+    font-size: 2em;
+    position: absolute;
+    right: 10px;
+    top: -5px;
+    cursor: pointer;
 }
 
 .time-holder h3 {
@@ -184,6 +185,11 @@ h2, h4, h3, h1, h5, h6 {
     padding: 8px;
     cursor: pointer;
     border-radius: 4px;
+    transition: all .3s linear;
+}
+
+.times:hover{
+    background: #eee;
 }
 
 label {
@@ -216,4 +222,48 @@ button.next{
     padding: 40px 0;
 }
 
-/* user section */
+/* doctors section */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+.form-signin .checkbox {
+  font-weight: 400;
+}
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="text"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
